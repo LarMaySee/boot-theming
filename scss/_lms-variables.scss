@@ -1,0 +1,138 @@
+// Color Section
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(("100": $gray-100,
+"200": $gray-200,
+"300": $gray-300,
+"400": $gray-400,
+"500": $gray-500,
+"600": $gray-600,
+"700": $gray-700,
+"800": $gray-800,
+"900": $gray-900),
+$grays);
+
+$blue: #2196f3;
+$lightBlue:#03a9f4;
+$indigo: #3f51b5;
+$purple: #9c27b0;
+$deepPurple: #673ab7;
+$pink: #e91e63;
+$red: #f44336;
+$orange: #ff9800;
+$deepOrange:#ff5722;
+$yellow: #ffeb3b;
+$amber:#ffc107;
+$green: #4caf50;
+$lightGreen:#8bc34a;
+$lime:#cddc39;
+$teal: #009688;
+$cyan: #00bcd4;
+$brown:#795548;
+$grey:#9e9e9e;
+$blueGrey:#607d8b;
+
+$primary: $blue;
+$secondary: $gray-300;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(("primary": $primary,
+"secondary": $secondary,
+"success": $success,
+"info": $info,
+"warning": $warning,
+"danger": $danger,
+"light": $light,
+"dark": $dark),
+$theme-colors);
+// end
+
+$enable-rounded: true;
+$border-radius: .15rem;
+$font-size-base: 14px; // Assumes the browser
+$spacer: 1rem;
+$transition: 0.3s;
+
+$alert-padding-y: .5rem;
+$alert-padding-x: 1rem;
+$alert-border-radius: $border-radius;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+// Buttons + Forms
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$component-active-bg: $primary;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.5;
+$line-height-lg: 1.5;
+$border-width: 1px;
+
+$input-btn-padding-y: .175rem;
+$input-btn-padding-x: .55rem;
+$input-btn-line-height: $line-height-base;
+
+
+$input-btn-padding-y-sm: .15rem;
+$input-btn-padding-x-sm: .4rem;
+$input-btn-line-height-sm: $line-height-sm;
+
+$input-btn-padding-y-lg: .4rem;
+$input-btn-padding-x-lg: 0.9rem;
+$input-btn-line-height-lg: $line-height-lg;
+$input-btn-border-width: $border-width;
+
+$input-btn-focus-width: .2rem !default;
+
+// Badges
+$badge-font-size: 75%;
+$badge-font-weight: $font-weight-bold;
+$badge-padding-y: .25em;
+$badge-padding-x: .4em;
+$badge-border-radius: $border-radius;
+
+$badge-pill-padding-x: .6em;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius: 10rem;
+
+// Cards
+
+$card-spacer-y: .75rem;
+$card-spacer-x: 1.25rem;
+$card-border-width: $border-width;
+$card-border-radius: $border-radius;
+$card-border-color: rgba($black, .125);
+$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width});
+$card-cap-bg: rgba($black, .03);
+$card-bg: $white;
+
+$card-img-overlay-padding: 1.25rem;
+
+$card-group-margin: ($grid-gutter-width / 2);
+$card-deck-margin: $card-group-margin;
+
+$card-columns-count: 3;
+$card-columns-gap: 1.25rem;
+$card-columns-margin: $card-spacer-y;

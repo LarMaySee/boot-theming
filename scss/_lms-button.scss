@@ -1,0 +1,23 @@
+.btn {
+    transition: $transition;
+
+    &.btn-round {
+        border-radius: $border-radius * 10;
+        transition: $transition;
+
+        &.btn-h-noround:hover {
+            border-radius: $border-radius;
+            transition: $transition;
+        }
+    }
+
+    &:focus,
+    &.focus {
+        outline: 0;
+    }
+
+    &.btn-h-round:hover {
+        border-radius: $border-radius * 10;
+        transition: $transition;
+    }
+}
