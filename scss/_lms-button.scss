@@ -1,23 +1,57 @@
 .btn {
+  transition: $transition;
+  .li-icon {
+    font-weight: 500;
+  }
+
+  .li-text-icon {
+    padding-right: 5px;
+  }
+
+  //round
+  &.btn-round {
+    border-radius: $border-radius * 10;
     transition: $transition;
 
-    &.btn-round {
-        border-radius: $border-radius * 10;
-        transition: $transition;
-
-        &.btn-h-noround:hover {
-            border-radius: $border-radius;
-            transition: $transition;
-        }
+    // hover not round from round.
+    &.btn-h-noround:hover {
+      border-radius: $border-radius;
+      transition: $transition;
     }
+  }
 
-    &:focus,
-    &.focus {
-        outline: 0;
-    }
+  //focus
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-box-shadow-none;
+  }
 
-    &.btn-h-round:hover {
-        border-radius: $border-radius * 10;
-        transition: $transition;
-    }
+  // hover round
+  &.btn-h-round:hover {
+    border-radius: $border-radius * 10;
+    transition: $transition;
+  }
+
+  //btn circle
+  &.btn-circle-sm {
+    width: 30px;
+    height: 30px;
+    border-radius: $border-radius * 50;
+    overflow: hidden;
+  }
+
+  &.btn-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: $border-radius * 50;
+    overflow: hidden;
+  }
+
+  &.btn-circle-lg {
+    width: 50px;
+    height: 50px;
+    border-radius: $border-radius * 50;
+    overflow: hidden;
+  }
 }

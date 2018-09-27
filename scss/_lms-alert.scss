@@ -1,3 +1,18 @@
 .alert {
     transition: $transition;
+    border: none;
+}
+
+.alert-dismissible {
+
+    // Adjust close link position
+    .close {
+        outline: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
 }
