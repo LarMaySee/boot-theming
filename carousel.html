@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel </title>
+    <link rel="stylesheet" href="custom/lms.css">
+    <link rel="stylesheet" href="node_modules/simple-line-icons/css/simple-line-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-12 mt-5">
+            <h3>Carousel</h3>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="custom/img/banner-img-01.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="custom/img/banner-img-02.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="custom/img/banner-img-03.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="custom/img/banner-img-04.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 mt-5 mb-5">
+            <h3>Carousel with Indicator.</h3>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="custom/img/banner-img-04.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="custom/img/banner-img-03.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="custom/img/banner-img-02.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 mt-5 mb-5">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Carousel with caption
+                        </div>
+                        <div class="card-body">
+                            <div id="carouselWithCaption" class="carousel slide shadow" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselWithCaption" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselWithCaption" data-slide-to="1"></li>
+                                    <li data-target="#carouselWithCaption" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="custom/img/keycloak-bg.png" alt="First slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Caption 1</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae
+                                                sint totam nulla numquam ex eum laborum aperiam officiis nemo ipsum
+                                                dignissimos tempore fuga voluptate facere, vel sit, quos cumque.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="custom/img/planet.jpg" alt="Second slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Caption 2</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis eum
+                                                iusto, eos at maiores quaerat numquam praesentium aspernatur quod animi
+                                                tenetur laborum minima exercitationem atque deleniti pariatur
+                                                cupiditate dolorum delectus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="custom/img/wallpaper.jpg" alt="Third slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Caption 3</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+                                                incidunt saepe mollitia rem, assumenda dolorum iure voluptatem. Porro
+                                                similique mollitia inventore? Modi architecto molestias saepe ut
+                                                laborum, corrupti error numquam!</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselWithCaption" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselWithCaption" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Carousel with no caption.
+                        </div>
+                        <div class="card-body">
+                            <div id="carouselWithNoCaption" class="carousel slide shadow" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselWithNoCaption" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselWithNoCaption" data-slide-to="1"></li>
+                                    <li data-target="#carouselWithNoCaption" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="custom/img/keycloak-bg.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="custom/img/planet.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="custom/img/wallpaper.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselWithNoCaption" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselWithNoCaption" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-5 mb-5">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="custom/img/img-01.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="custom/img/keycloak-bg.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="custom/img/planet.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
