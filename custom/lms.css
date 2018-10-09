@@ -8620,7 +8620,7 @@ h3 {
   padding-right: 5px;
 }
 .btn.btn-round {
-  border-radius: 1rem;
+  border-radius: 2rem;
   transition: 0.3s;
 }
 .btn.btn-round.btn-h-noround:hover {
@@ -8632,7 +8632,7 @@ h3 {
   box-shadow: none;
 }
 .btn.btn-h-round:hover {
-  border-radius: 1rem;
+  border-radius: 2rem;
   transition: 0.3s;
 }
 .btn.btn-circle-sm {

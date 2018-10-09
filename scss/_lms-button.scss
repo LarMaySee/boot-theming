@@ -1,57 +1,58 @@
 .btn {
-  transition: $transition;
-  .li-icon {
-    font-weight: 500;
-  }
-
-  .li-text-icon {
-    padding-right: 5px;
-  }
-
-  //round
-  &.btn-round {
-    border-radius: $border-radius * 10;
     transition: $transition;
 
-    // hover not round from round.
-    &.btn-h-noround:hover {
-      border-radius: $border-radius;
-      transition: $transition;
+    .li-icon {
+        font-weight: 500;
     }
-  }
 
-  //focus
-  &:focus,
-  &.focus {
-    outline: 0;
-    box-shadow: $btn-box-shadow-none;
-  }
+    .li-text-icon {
+        padding-right: 5px;
+    }
 
-  // hover round
-  &.btn-h-round:hover {
-    border-radius: $border-radius * 10;
-    transition: $transition;
-  }
+    //round
+    &.btn-round {
+        border-radius: $border-radius * 20;
+        transition: $transition;
 
-  //btn circle
-  &.btn-circle-sm {
-    width: 30px;
-    height: 30px;
-    border-radius: $border-radius * 50;
-    overflow: hidden;
-  }
+        // hover not round from round.
+        &.btn-h-noround:hover {
+            border-radius: $border-radius;
+            transition: $transition;
+        }
+    }
 
-  &.btn-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: $border-radius * 50;
-    overflow: hidden;
-  }
+    //focus
+    &:focus,
+    &.focus {
+        outline: 0;
+        box-shadow: $btn-box-shadow-none;
+    }
 
-  &.btn-circle-lg {
-    width: 50px;
-    height: 50px;
-    border-radius: $border-radius * 50;
-    overflow: hidden;
-  }
+    // hover round
+    &.btn-h-round:hover {
+        border-radius: $border-radius * 20;
+        transition: $transition;
+    }
+
+    //btn circle
+    &.btn-circle-sm {
+        width: 30px;
+        height: 30px;
+        border-radius: $border-radius * 50;
+        overflow: hidden;
+    }
+
+    &.btn-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: $border-radius * 50;
+        overflow: hidden;
+    }
+
+    &.btn-circle-lg {
+        width: 50px;
+        height: 50px;
+        border-radius: $border-radius * 50;
+        overflow: hidden;
+    }
 }
