@@ -1,58 +1,59 @@
 .btn {
+  transition: $transition;
+
+  .li-icon {
+    font-weight: 500;
+    vertical-align: middle;
+  }
+
+  .li-text-icon {
+    padding-right: 5px;
+  }
+
+  //round
+  &.btn-round {
+    border-radius: $border-radius * 20;
     transition: $transition;
 
-    .li-icon {
-        font-weight: 500;
+    // hover not round from round.
+    &.btn-h-noround:hover {
+      border-radius: $border-radius;
+      transition: $transition;
     }
+  }
 
-    .li-text-icon {
-        padding-right: 5px;
-    }
+  //focus
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-box-shadow-none;
+  }
 
-    //round
-    &.btn-round {
-        border-radius: $border-radius * 20;
-        transition: $transition;
+  // hover round
+  &.btn-h-round:hover {
+    border-radius: $border-radius * 20;
+    transition: $transition;
+  }
 
-        // hover not round from round.
-        &.btn-h-noround:hover {
-            border-radius: $border-radius;
-            transition: $transition;
-        }
-    }
+  //btn circle
+  &.btn-circle-sm {
+    width: 30px;
+    height: 30px;
+    border-radius: $border-radius * 50;
+    overflow: hidden;
+  }
 
-    //focus
-    &:focus,
-    &.focus {
-        outline: 0;
-        box-shadow: $btn-box-shadow-none;
-    }
+  &.btn-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: $border-radius * 50;
+    overflow: hidden;
+  }
 
-    // hover round
-    &.btn-h-round:hover {
-        border-radius: $border-radius * 20;
-        transition: $transition;
-    }
-
-    //btn circle
-    &.btn-circle-sm {
-        width: 30px;
-        height: 30px;
-        border-radius: $border-radius * 50;
-        overflow: hidden;
-    }
-
-    &.btn-circle {
-        width: 40px;
-        height: 40px;
-        border-radius: $border-radius * 50;
-        overflow: hidden;
-    }
-
-    &.btn-circle-lg {
-        width: 50px;
-        height: 50px;
-        border-radius: $border-radius * 50;
-        overflow: hidden;
-    }
+  &.btn-circle-lg {
+    width: 50px;
+    height: 50px;
+    border-radius: $border-radius * 50;
+    overflow: hidden;
+  }
 }

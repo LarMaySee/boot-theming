@@ -1,0 +1,6 @@
+.close {
+
+  &:not(:disabled):not(.disabled) {
+    outline: none;
+  }
+}

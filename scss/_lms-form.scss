@@ -1,0 +1,68 @@
+.form-control {
+  transition: $transition;
+  background: $gray-200;
+  border: $input-border-width solid transparent;
+
+  &:focus {
+    box-shadow: none;
+    transition: $transition;
+    border: $input-border-width solid $input-border-color;
+  }
+}
+
+.form-control-primary {
+  transition: $transition;
+  background: $gray-200;
+  border: $input-border-width solid transparent;
+
+  &:focus {
+    box-shadow: none;
+    transition: $transition;
+    border: $input-border-width solid $primary !important;
+  }
+}
+
+.form-control-success {
+  transition: $transition;
+  background: $gray-200;
+  border: $input-border-width solid $success !important;
+
+  &:focus {
+    box-shadow: none;
+    transition: $transition;
+  }
+}
+
+.form-control-danger {
+  transition: $transition;
+  background: $gray-200;
+  border: $input-border-width solid $danger !important;
+
+  &:focus {
+    box-shadow: none;
+    transition: $transition;
+  }
+}
+
+.form-control-warning {
+  transition: $transition;
+  background: $gray-200;
+  border: $input-border-width solid transparent;
+  border: $input-border-width solid $warning !important;
+
+  &:focus {
+    box-shadow: none;
+    transition: $transition;
+  }
+}
+
+.form-control-info {
+  transition: $transition;
+  background: $gray-200;
+  border: $input-border-width solid $info !important;
+
+  &:focus {
+    box-shadow: none;
+    transition: $transition;
+  }
+}

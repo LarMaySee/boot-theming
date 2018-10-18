@@ -1,0 +1,64 @@
+.list-group {
+  display: flex;
+  flex-direction: column;
+
+  // No need to set list-style: none; since .list-group-item is block level
+  padding-left: 0; // reset padding because ul and ol
+  margin-bottom: 0;
+  list-style: none;
+
+  .list-group-item-flex {
+    display: flex;
+    flex-direction: row;
+
+    padding: $list-group-item-padding-y $list-group-item-padding-x;
+    // Place the border on the list items and negative margin up for better styling
+    margin-bottom: -$list-group-border-width;
+    background-color: $list-group-bg;
+    border: $list-group-border-width solid $list-group-border-color;
+
+    &.j-content-center {
+      justify-content: space-between;
+    }
+
+    .list-flex-item-header {
+      font-weight: bold;
+      width: calc(100%);
+      padding: 0px 10px;
+
+      &:first-child {
+        width: calc(100% - 80%);
+        flex-grow: 1;
+      }
+
+      &:last-child {
+        width: calc(100% - 80%);
+
+        flex-grow: 1;
+      }
+    }
+
+    .list-flex-item {
+      flex-grow: 1;
+      width: calc(100%);
+      padding: 0px 10px;
+
+      &:first-child {
+        width: calc(100% - 80%);
+        flex-grow: 1;
+
+      }
+
+      &:last-child {
+        width: calc(100% - 80%);
+        flex-grow: 1;
+
+      }
+    }
+
+    &.active {
+      background-color: $list-group-active-bg;
+      border-color: $list-group-active-border-color;
+    }
+  }
+}
