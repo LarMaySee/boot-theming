@@ -35,6 +35,8 @@ $light: #F6F7F9;
 $dark: #4F5A63;
 $black: #000;
 
+$body-bg: $gray-100;
+
 $btn-box-shadow-none: none;
 $border-width: 1px;
 //input
@@ -42,7 +44,7 @@ $input-bg: $gray-200;
 $input-border-color: $gray-300;
 
 //button
-$input-btn-padding-y: .28rem;
+$input-btn-padding-y: .375rem;
 $input-btn-padding-x: .75rem;
 
 //font-size

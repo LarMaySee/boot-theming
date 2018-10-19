@@ -1,26 +1,30 @@
 .card {
-    .card-header {
-        border-bottom: none;
-    }
+  &.b-none {
+    border: none;
+  }
+
+  .card-header {
+    border-bottom: none;
+  }
 }
 
 .card-group {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 
+  .card {
+    border: none;
+    border-right: $card-border-width solid $card-border-color;
+    box-shadow: none;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
     .card {
-        border: none;
-        border-right: $card-border-width solid $card-border-color;
-        box-shadow: none;
-
-        &:last-child {
-            border-right: none;
-        }
+      border: none;
+      border-right: none;
     }
-
-    @include media-breakpoint-down(sm) {
-        .card {
-            border: none;
-            border-right: none;
-        }
-    }
+  }
 }

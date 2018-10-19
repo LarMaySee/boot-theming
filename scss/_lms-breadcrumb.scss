@@ -51,12 +51,16 @@
   }
 }
 
-.page-header {
+.breadcrumb-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 20px 0px;
+  margin-bottom: 0;
 
-  .page-title {
+  .breadcrumb-title {
     padding: 10px 0;
+    margin-bottom: 0;
   }
 }
