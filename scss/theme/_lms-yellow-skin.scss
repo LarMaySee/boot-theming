@@ -1,41 +1,55 @@
+ $yellow: #FBC02D;
+
+ .yellow-skin-dark,
  .yellow-skin-light {
-   .topbar .top-navbar {
-     background-color: #FBC02D;
+ 	.left-sidebar {
+ 		.sidebar-header {
+ 			.logo {
+ 				background: $yellow;
+ 				border: 1px solid $border-color;
+ 			}
+ 		}
+ 	}
+ }
 
-     .nav-item {
-       .nav-link {
-         color: #353535;
+ .yellow-skin-light {
+ 	.topbar .top-navbar {
+ 		background-color: $yellow;
 
-         &:hover,
-         &.active {
-           color: #151515;
-         }
-       }
-     }
-   }
+ 		.nav-item {
+ 			.nav-link {
+ 				color: #353535;
 
-   .left-sidebar {
-     background: $white;
-   }
+ 				&:hover,
+ 				&.active {
+ 					color: #151515;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.left-sidebar {
+ 		background: $white;
+ 	}
  }
 
  .yellow-skin-dark {
-   .topbar .top-navbar {
-     background-color: #FBC02D;
+ 	.topbar .top-navbar {
+ 		background-color: $yellow;
 
-     .nav-item {
-       .nav-link {
-         color: #353535;
+ 		.nav-item {
+ 			.nav-link {
+ 				color: #353535;
 
-         &:hover,
-         &.active {
-           color: #151515;
-         }
-       }
-     }
-   }
+ 				&:hover,
+ 				&.active {
+ 					color: #151515;
+ 				}
+ 			}
+ 		}
+ 	}
 
-   .left-sidebar {
-     background-color: $dark;
-   }
+ 	.left-sidebar {
+ 		background-color: $dark;
+ 	}
  }

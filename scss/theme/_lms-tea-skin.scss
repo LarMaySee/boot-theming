@@ -1,58 +1,72 @@
+$tea: #009688;
+
+.tea-skin-dark,
 .tea-skin-light {
-  .topbar .top-navbar {
-    background-color: #009688;
+	.left-sidebar {
+		.sidebar-header {
+			.logo {
+				background: $tea;
+				border: 1px solid $border-color;
+			}
+		}
+	}
+}
 
-    .nav-item {
-      .nav-link {
-        color: #EEEEEE;
+.tea-skin-light {
+	.topbar .top-navbar {
+		background-color: $tea;
 
-        &:hover,
-        &.active {
-          color: #E5E5E5;
-        }
-      }
-    }
+		.nav-item {
+			.nav-link {
+				color: #EEEEEE;
 
-    .nav-item a.nav-link {
-      color: #ECEFF1;
-    }
-  }
+				&:hover,
+				&.active {
+					color: #E5E5E5;
+				}
+			}
+		}
 
-  .left-sidebar {
-    background: $white;
+		.nav-item a.nav-link {
+			color: #ECEFF1;
+		}
+	}
 
-  }
+	.left-sidebar {
+		background: $white;
+
+	}
 }
 
 .tea-skin-dark {
 
-  .topbar .top-navbar {
-    background-color: #009688;
+	.topbar .top-navbar {
+		background-color: $tea;
 
-    .nav-item {
-      .nav-link {
-        color: #EEEEEE;
+		.nav-item {
+			.nav-link {
+				color: #EEEEEE;
 
-        &:hover,
-        &.active {
-          color: #E5E5E5;
-        }
-      }
-    }
+				&:hover,
+				&.active {
+					color: #E5E5E5;
+				}
+			}
+		}
 
-  }
+	}
 
-  .left-sidebar {
-    background-color: $dark;
+	.left-sidebar {
+		background-color: $dark;
 
-    .nav-item a.nav-link {
-      color: #808284;
+		.nav-item a.nav-link {
+			color: #808284;
 
-      &.active,
-      &:active,
-      &:focus {
-        color: #009688;
-      }
-    }
-  }
+			&.active,
+			&:active,
+			&:focus {
+				color: #009688;
+			}
+		}
+	}
 }
