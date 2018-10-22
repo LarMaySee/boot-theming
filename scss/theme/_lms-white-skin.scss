@@ -1,0 +1,23 @@
+//dark skin
+.white-skin-light {
+  .topbar .top-navbar {
+    background-color: $white;
+  }
+
+  .left-sidebar {
+    background: $white;
+  }
+
+}
+
+// light skin
+.white-skin-dark {
+  .topbar .top-navbar {
+    background-color: $white;
+  }
+
+  .left-sidebar {
+    background-color: $dark;
+  }
+
+}

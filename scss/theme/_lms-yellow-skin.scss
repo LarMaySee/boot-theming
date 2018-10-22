@@ -1,0 +1,41 @@
+ .yellow-skin-light {
+   .topbar .top-navbar {
+     background-color: #FBC02D;
+
+     .nav-item {
+       .nav-link {
+         color: #353535;
+
+         &:hover,
+         &.active {
+           color: #151515;
+         }
+       }
+     }
+   }
+
+   .left-sidebar {
+     background: $white;
+   }
+ }
+
+ .yellow-skin-dark {
+   .topbar .top-navbar {
+     background-color: #FBC02D;
+
+     .nav-item {
+       .nav-link {
+         color: #353535;
+
+         &:hover,
+         &.active {
+           color: #151515;
+         }
+       }
+     }
+   }
+
+   .left-sidebar {
+     background-color: $dark;
+   }
+ }

@@ -1,0 +1,41 @@
+.blue-skin-light {
+  .topbar .top-navbar {
+    background-color: $blue;
+
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
+
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
+
+  .left-sidebar {
+    background: $white;
+  }
+}
+
+.blue-skin-dark {
+  .topbar .top-navbar {
+    background-color: $blue;
+
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
+
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
+
+  .left-sidebar {
+    background-color: $dark;
+  }
+}

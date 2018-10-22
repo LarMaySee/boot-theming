@@ -1,0 +1,40 @@
+// light 
+.primary-skin-light {
+
+  .topbar .top-navbar {
+    background-color: $primary !important;
+
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
+      }
+    }
+  }
+
+  .left-sidebar {
+    background-color: $white !important;
+  }
+
+}
+
+//dark
+.primary-skin-dark {
+  .topbar .top-navbar {
+    background-color: $primary !important;
+
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
+
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
+
+  .left-sidebar {
+    background-color: $dark;
+  }
+}

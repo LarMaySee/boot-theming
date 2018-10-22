@@ -1,0 +1,41 @@
+.purple-skin-light {
+  .topbar .top-navbar {
+    background-color: $purple;
+
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
+
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
+
+  .left-sidebar {
+    background: $white;
+  }
+}
+
+.purple-skin-dark {
+  .topbar .top-navbar {
+    background-color: $purple;
+
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
+
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
+
+  .left-sidebar {
+    background-color: $dark;
+  }
+}
