@@ -9040,8 +9040,8 @@ h3 {
 }
 .left-sidebar .sidebar-body {
   height: calc(100% - 60px);
-  overflow-y: auto;
   padding: 15px 0 0;
+  position: relative;
 }
 .left-sidebar .sidebar-body .sidebar-nav {
   padding: 0;

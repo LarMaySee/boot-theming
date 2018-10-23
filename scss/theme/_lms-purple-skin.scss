@@ -65,7 +65,9 @@
 
         li {
           &.selected {
-            a.active {
+
+            a.active,
+            a {
               border-left: 3px solid $purple;
             }
           }
@@ -86,12 +88,12 @@
           ul {
             li {
               a {
-                border-left: 3px solid transparent;
+                border-left: 3px solid transparent !important;
 
                 &:hover,
                 &:active {
                   background-color: transparent;
-                  border-left: 3px solid transparent;
+                  border-left: 3px solid transparent !important;
                 }
               }
             }

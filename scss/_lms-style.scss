@@ -182,8 +182,8 @@
   // sidebar body
   .sidebar-body {
     height: calc(100% - 60px);
-    overflow-y: auto;
     padding: 15px 0 0;
+    position: relative;
 
     //ul wrapper
     .sidebar-nav {

@@ -71,7 +71,9 @@ $tea: #009688;
 
         li {
           &.selected {
-            a.active {
+
+            a.active,
+            a {
               border-left: 3px solid $tea;
             }
           }
@@ -92,12 +94,12 @@ $tea: #009688;
           ul {
             li {
               a {
-                border-left: 3px solid transparent;
+                border-left: 3px solid transparent !important;
 
                 &:hover,
                 &:active {
                   background-color: transparent;
-                  border-left: 3px solid transparent;
+                  border-left: 3px solid transparent !important;
                 }
               }
             }
