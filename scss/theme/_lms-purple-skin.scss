@@ -1,53 +1,125 @@
 .purple-skin-dark,
 .purple-skin-light {
-	.left-sidebar {
-		.sidebar-header {
-			.logo {
-				background: $purple;
-				border: 1px solid $border-color;
-			}
-		}
-	}
+  .left-sidebar {
+    .sidebar-header {
+      .logo {
+        background: $purple;
+        border: 1px solid $border-color;
+      }
+    }
+
+    // sidebar body
+    .sidebar-body {
+
+      //ul wrapper
+      .sidebar-nav {
+        transition: $transition;
+
+        li {
+          ul li a {
+            color: #9d9d9d;
+          }
+
+          a {
+            &.active {
+              color: $purple;
+            }
+
+            &:hover,
+            &:active {
+              color: $purple;
+
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .purple-skin-light {
-	.topbar .top-navbar {
-		background-color: $purple;
+  .topbar .top-navbar {
+    background-color: $purple;
 
-		.nav-item {
-			.nav-link {
-				color: #EEEEEE;
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
 
-				&:hover,
-				&.active {
-					color: #E5E5E5;
-				}
-			}
-		}
-	}
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
 
-	.left-sidebar {
-		background: $white;
-	}
+  .left-sidebar {
+    background: $white;
+
+    // sidebar body
+    .sidebar-body {
+
+      //ul wrapper
+      .sidebar-nav {
+        transition: $transition;
+
+        li {
+          &.selected {
+            a.active {
+              border-left: 3px solid $purple;
+            }
+          }
+
+          a {
+            border-left: 3px solid transparent;
+
+            &.has-arrow.active {
+              border-left: 3px solid $purple;
+            }
+
+            &:hover,
+            &:active {
+              border-left: 3px solid $purple;
+            }
+          }
+
+          ul {
+            li {
+              a {
+                border-left: 3px solid transparent;
+
+                &:hover,
+                &:active {
+                  background-color: transparent;
+                  border-left: 3px solid transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
 
 .purple-skin-dark {
-	.topbar .top-navbar {
-		background-color: $purple;
+  .topbar .top-navbar {
+    background-color: $purple;
 
-		.nav-item {
-			.nav-link {
-				color: #EEEEEE;
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
 
-				&:hover,
-				&.active {
-					color: #E5E5E5;
-				}
-			}
-		}
-	}
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
 
-	.left-sidebar {
-		background-color: $dark;
-	}
+  .left-sidebar {
+    background-color: $skin-dark;
+  }
 }

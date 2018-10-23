@@ -1,53 +1,126 @@
 // light 
 .primary-skin-dark,
 .primary-skin-light {
-	.left-sidebar {
-		.sidebar-header {
-			.logo {
-				background: $primary;
-				border: 1px solid $border-color;
-			}
-		}
-	}
+  .left-sidebar {
+    .sidebar-header {
+      .logo {
+        background: $primary;
+        border: 1px solid $border-color;
+      }
+    }
+
+    // sidebar body
+    .sidebar-body {
+
+      //ul wrapper
+      .sidebar-nav {
+        transition: $transition;
+
+        li {
+          ul {
+            a {
+              color: #9c9d9d;
+            }
+          }
+
+          a {
+            &.active {
+              color: $primary;
+            }
+
+            &:hover,
+            &:active {
+              color: $primary;
+
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .primary-skin-light {
+  .topbar .top-navbar {
+    background-color: $primary !important;
 
-	.topbar .top-navbar {
-		background-color: $primary !important;
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
+      }
+    }
+  }
 
-		.nav-item {
-			.nav-link {
-				color: #EEEEEE;
-			}
-		}
-	}
+  .left-sidebar {
+    background-color: $white !important;
 
-	.left-sidebar {
-		background-color: $white !important;
+    // sidebar body
+    .sidebar-body {
 
-	}
+      //ul wrapper
+      .sidebar-nav {
+        transition: $transition;
+
+        li {
+          &.selected {
+            a.active {
+              border-left: 3px solid $primary;
+            }
+          }
+
+          a {
+            border-left: 3px solid transparent;
+
+            &.has-arrow.active {
+              border-left: 3px solid $primary;
+            }
+
+            &:hover,
+            &:active {
+              border-left: 3px solid $primary;
+
+            }
+          }
+
+          ul {
+            li {
+              a {
+                border-left: 3px solid transparent;
+
+                &:hover,
+                &:active {
+                  background-color: transparent;
+                  border-left: 3px solid transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
 
 }
 
 //dark
 .primary-skin-dark {
-	.topbar .top-navbar {
-		background-color: $primary !important;
+  .topbar .top-navbar {
+    background-color: $primary !important;
 
-		.nav-item {
-			.nav-link {
-				color: #EEEEEE;
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
 
-				&:hover,
-				&.active {
-					color: #E5E5E5;
-				}
-			}
-		}
-	}
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
 
-	.left-sidebar {
-		background-color: $dark;
-	}
+  .left-sidebar {
+    background-color: $skin-dark;
+  }
 }

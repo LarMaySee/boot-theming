@@ -1,53 +1,124 @@
 .blue-skin-dark,
 .blue-skin-light {
-	.left-sidebar {
-		.sidebar-header {
-			.logo {
-				background: $blue;
-				border: 1px solid $border-color;
-			}
-		}
-	}
+  .left-sidebar {
+    .sidebar-header {
+      .logo {
+        background: $blue;
+        border: 1px solid $border-color;
+      }
+    }
+
+    // sidebar body
+    .sidebar-body {
+
+      //ul wrapper
+      .sidebar-nav {
+        transition: $transition;
+
+        li {
+          ul li a {
+            color: #9c9d9d;
+          }
+
+          a {
+            &.active {
+              color: $blue;
+            }
+
+            &:hover,
+            &:active {
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .blue-skin-light {
-	.topbar .top-navbar {
-		background-color: $blue;
+  .topbar .top-navbar {
+    background-color: $blue;
 
-		.nav-item {
-			.nav-link {
-				color: #EEEEEE;
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
 
-				&:hover,
-				&.active {
-					color: #E5E5E5;
-				}
-			}
-		}
-	}
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
 
-	.left-sidebar {
-		background: $white;
-	}
+  .left-sidebar {
+    background: $white;
+
+    // sidebar body
+    .sidebar-body {
+
+      //ul wrapper
+      .sidebar-nav {
+        transition: $transition;
+
+        li {
+          &.selected {
+            a.active {
+              border-left: 3px solid $blue;
+            }
+          }
+
+          a {
+            border-left: 3px solid transparent;
+
+            &.has-arrow.active {
+              border-left: 3px solid $blue;
+            }
+
+            &:hover,
+            &:active {
+              border-left: 3px solid $blue;
+            }
+          }
+
+          ul {
+            li {
+              a {
+                border-left: 3px solid transparent;
+
+                &:hover,
+                &:active {
+                  background-color: transparent;
+                  border-left: 3px solid transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
 
 .blue-skin-dark {
-	.topbar .top-navbar {
-		background-color: $blue;
+  .topbar .top-navbar {
+    background-color: $blue;
 
-		.nav-item {
-			.nav-link {
-				color: #EEEEEE;
+    .nav-item {
+      .nav-link {
+        color: #EEEEEE;
 
-				&:hover,
-				&.active {
-					color: #E5E5E5;
-				}
-			}
-		}
-	}
+        &:hover,
+        &.active {
+          color: #E5E5E5;
+        }
+      }
+    }
+  }
 
-	.left-sidebar {
-		background-color: $dark;
-	}
+  .left-sidebar {
+    background-color: $skin-dark;
+  }
 }
