@@ -18,6 +18,13 @@
 }
 
 .breadcrumb-item {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   // The separator between breadcrumbs (by default, a forward-slash: "/")
   +.breadcrumb-item {

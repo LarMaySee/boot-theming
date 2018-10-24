@@ -1,6 +1,7 @@
 .dark-skin-light {
   .topbar .top-navbar {
     background-color: $dark;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -22,6 +23,7 @@
 .dark-skin-dark {
   .topbar .top-navbar {
     background-color: $dark;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -37,5 +39,7 @@
 
   .left-sidebar {
     background-color: $skin-dark;
+    transition: all $transition;
+
   }
 }

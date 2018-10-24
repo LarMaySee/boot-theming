@@ -6,7 +6,6 @@ $tea: #009688;
     .sidebar-header {
       .logo {
         background: $tea;
-        border: 1px solid $border-color;
       }
     }
 
@@ -42,6 +41,7 @@ $tea: #009688;
 .tea-skin-light {
   .topbar .top-navbar {
     background-color: $tea;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -61,6 +61,7 @@ $tea: #009688;
 
   .left-sidebar {
     background: $white;
+    transition: all $transition;
 
     // sidebar body
     .sidebar-body {
@@ -114,6 +115,7 @@ $tea: #009688;
 
   .topbar .top-navbar {
     background-color: $tea;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -130,6 +132,7 @@ $tea: #009688;
 
   .left-sidebar {
     background-color: $skin-dark;
+    transition: all $transition;
 
     .nav-item a.nav-link {
       color: #808284;

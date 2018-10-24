@@ -5,7 +5,6 @@
     .sidebar-header {
       .logo {
         background: $primary;
-        border: 1px solid $border-color;
       }
     }
 
@@ -17,7 +16,14 @@
         transition: $transition;
 
         li {
+          &.selected {
+            a.active {
+              color: $primary;
+            }
+          }
+
           ul {
+
             a {
               color: #9c9d9d;
             }
@@ -43,6 +49,7 @@
 .primary-skin-light {
   .topbar .top-navbar {
     background-color: $primary !important;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -53,6 +60,7 @@
 
   .left-sidebar {
     background-color: $white !important;
+    transition: all $transition;
 
     // sidebar body
     .sidebar-body {
@@ -109,6 +117,7 @@
 .primary-skin-dark {
   .topbar .top-navbar {
     background-color: $primary !important;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -124,5 +133,6 @@
 
   .left-sidebar {
     background-color: $skin-dark;
+    transition: all $transition;
   }
 }

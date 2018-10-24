@@ -2,10 +2,14 @@
 .white-skin-light {
   .topbar .top-navbar {
     background-color: $white;
+    transition: all $transition;
+
   }
 
   .left-sidebar {
     background: $white;
+    transition: all $transition;
+
   }
 
 }
@@ -14,10 +18,14 @@
 .white-skin-dark {
   .topbar .top-navbar {
     background-color: $white;
+    transition: all $transition;
+
   }
 
   .left-sidebar {
     background-color: $skin-dark;
+    transition: all $transition;
+
   }
 
 }

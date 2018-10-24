@@ -6,7 +6,6 @@ $yellow: #fbc02d;
     .sidebar-header {
       .logo {
         background: $yellow;
-        border: 1px solid $border-color;
       }
     }
   }
@@ -15,6 +14,7 @@ $yellow: #fbc02d;
 .yellow-skin-light {
   .topbar .top-navbar {
     background-color: $yellow;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -30,12 +30,15 @@ $yellow: #fbc02d;
 
   .left-sidebar {
     background: $white;
+    transition: all $transition;
+
   }
 }
 
 .yellow-skin-dark {
   .topbar .top-navbar {
     background-color: $yellow;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -51,5 +54,7 @@ $yellow: #fbc02d;
 
   .left-sidebar {
     background-color: $skin-dark;
+    transition: all $transition;
+
   }
 }

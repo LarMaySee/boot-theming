@@ -4,7 +4,6 @@
     .sidebar-header {
       .logo {
         background: $blue;
-        border: 1px solid $border-color;
       }
     }
 
@@ -39,6 +38,7 @@
 .blue-skin-light {
   .topbar .top-navbar {
     background-color: $blue;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -54,6 +54,7 @@
 
   .left-sidebar {
     background: $white;
+    transition: all $transition;
 
     // sidebar body
     .sidebar-body {
@@ -107,6 +108,7 @@
 .blue-skin-dark {
   .topbar .top-navbar {
     background-color: $blue;
+    transition: all $transition;
 
     .nav-item {
       .nav-link {
@@ -122,5 +124,7 @@
 
   .left-sidebar {
     background-color: $skin-dark;
+    transition: all $transition;
+
   }
 }

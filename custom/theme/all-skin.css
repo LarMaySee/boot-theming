@@ -8608,26 +8608,33 @@ h3 {
 }
 .white-skin-light .topbar .top-navbar {
   background-color: #fff;
+  transition: all 0.3s;
 }
 .white-skin-light .left-sidebar {
   background: #fff;
+  transition: all 0.3s;
 }
 
 .white-skin-dark .topbar .top-navbar {
   background-color: #fff;
+  transition: all 0.3s;
 }
 .white-skin-dark .left-sidebar {
   background-color: #2b2f3a;
+  transition: all 0.3s;
 }
 
 .primary-skin-dark .left-sidebar .sidebar-header .logo,
 .primary-skin-light .left-sidebar .sidebar-header .logo {
   background: #FF6200;
-  border: 1px solid #dee2e6;
 }
 .primary-skin-dark .left-sidebar .sidebar-body .sidebar-nav,
 .primary-skin-light .left-sidebar .sidebar-body .sidebar-nav {
   transition: 0.3s;
+}
+.primary-skin-dark .left-sidebar .sidebar-body .sidebar-nav li.selected a.active,
+.primary-skin-light .left-sidebar .sidebar-body .sidebar-nav li.selected a.active {
+  color: #FF6200;
 }
 .primary-skin-dark .left-sidebar .sidebar-body .sidebar-nav li ul a,
 .primary-skin-light .left-sidebar .sidebar-body .sidebar-nav li ul a {
@@ -8645,12 +8652,14 @@ h3 {
 
 .primary-skin-light .topbar .top-navbar {
   background-color: #FF6200 !important;
+  transition: all 0.3s;
 }
 .primary-skin-light .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
 }
 .primary-skin-light .left-sidebar {
   background-color: #fff !important;
+  transition: all 0.3s;
 }
 .primary-skin-light .left-sidebar .sidebar-body .sidebar-nav {
   transition: 0.3s;
@@ -8678,6 +8687,7 @@ h3 {
 
 .primary-skin-dark .topbar .top-navbar {
   background-color: #FF6200 !important;
+  transition: all 0.3s;
 }
 .primary-skin-dark .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8687,12 +8697,12 @@ h3 {
 }
 .primary-skin-dark .left-sidebar {
   background-color: #2b2f3a;
+  transition: all 0.3s;
 }
 
 .blue-skin-dark .left-sidebar .sidebar-header .logo,
 .blue-skin-light .left-sidebar .sidebar-header .logo {
   background: #2196f3;
-  border: 1px solid #dee2e6;
 }
 .blue-skin-dark .left-sidebar .sidebar-body .sidebar-nav,
 .blue-skin-light .left-sidebar .sidebar-body .sidebar-nav {
@@ -8714,6 +8724,7 @@ h3 {
 
 .blue-skin-light .topbar .top-navbar {
   background-color: #2196f3;
+  transition: all 0.3s;
 }
 .blue-skin-light .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8723,6 +8734,7 @@ h3 {
 }
 .blue-skin-light .left-sidebar {
   background: #fff;
+  transition: all 0.3s;
 }
 .blue-skin-light .left-sidebar .sidebar-body .sidebar-nav {
   transition: 0.3s;
@@ -8750,6 +8762,7 @@ h3 {
 
 .blue-skin-dark .topbar .top-navbar {
   background-color: #2196f3;
+  transition: all 0.3s;
 }
 .blue-skin-dark .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8759,10 +8772,12 @@ h3 {
 }
 .blue-skin-dark .left-sidebar {
   background-color: #2b2f3a;
+  transition: all 0.3s;
 }
 
 .dark-skin-light .topbar .top-navbar {
   background-color: #4F5A63;
+  transition: all 0.3s;
 }
 .dark-skin-light .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8776,6 +8791,7 @@ h3 {
 
 .dark-skin-dark .topbar .top-navbar {
   background-color: #4F5A63;
+  transition: all 0.3s;
 }
 .dark-skin-dark .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8785,12 +8801,12 @@ h3 {
 }
 .dark-skin-dark .left-sidebar {
   background-color: #2b2f3a;
+  transition: all 0.3s;
 }
 
 .tea-skin-dark .left-sidebar .sidebar-header .logo,
 .tea-skin-light .left-sidebar .sidebar-header .logo {
   background: #009688;
-  border: 1px solid #dee2e6;
 }
 .tea-skin-dark .left-sidebar .sidebar-body .sidebar-nav,
 .tea-skin-light .left-sidebar .sidebar-body .sidebar-nav {
@@ -8812,6 +8828,7 @@ h3 {
 
 .tea-skin-light .topbar .top-navbar {
   background-color: #009688;
+  transition: all 0.3s;
 }
 .tea-skin-light .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8824,6 +8841,7 @@ h3 {
 }
 .tea-skin-light .left-sidebar {
   background: #fff;
+  transition: all 0.3s;
 }
 .tea-skin-light .left-sidebar .sidebar-body .sidebar-nav {
   transition: 0.3s;
@@ -8851,6 +8869,7 @@ h3 {
 
 .tea-skin-dark .topbar .top-navbar {
   background-color: #009688;
+  transition: all 0.3s;
 }
 .tea-skin-dark .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8860,6 +8879,7 @@ h3 {
 }
 .tea-skin-dark .left-sidebar {
   background-color: #2b2f3a;
+  transition: all 0.3s;
 }
 .tea-skin-dark .left-sidebar .nav-item a.nav-link {
   color: #808284;
@@ -8871,11 +8891,11 @@ h3 {
 .yellow-skin-dark .left-sidebar .sidebar-header .logo,
 .yellow-skin-light .left-sidebar .sidebar-header .logo {
   background: #fbc02d;
-  border: 1px solid #dee2e6;
 }
 
 .yellow-skin-light .topbar .top-navbar {
   background-color: #fbc02d;
+  transition: all 0.3s;
 }
 .yellow-skin-light .topbar .top-navbar .nav-item .nav-link {
   color: #353535;
@@ -8885,10 +8905,12 @@ h3 {
 }
 .yellow-skin-light .left-sidebar {
   background: #fff;
+  transition: all 0.3s;
 }
 
 .yellow-skin-dark .topbar .top-navbar {
   background-color: #fbc02d;
+  transition: all 0.3s;
 }
 .yellow-skin-dark .topbar .top-navbar .nav-item .nav-link {
   color: #353535;
@@ -8898,12 +8920,12 @@ h3 {
 }
 .yellow-skin-dark .left-sidebar {
   background-color: #2b2f3a;
+  transition: all 0.3s;
 }
 
 .purple-skin-dark .left-sidebar .sidebar-header .logo,
 .purple-skin-light .left-sidebar .sidebar-header .logo {
   background: #8e24aa;
-  border: 1px solid #dee2e6;
 }
 .purple-skin-dark .left-sidebar .sidebar-body .sidebar-nav,
 .purple-skin-light .left-sidebar .sidebar-body .sidebar-nav {
@@ -8925,6 +8947,7 @@ h3 {
 
 .purple-skin-light .topbar .top-navbar {
   background-color: #8e24aa;
+  transition: all 0.3s;
 }
 .purple-skin-light .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8934,6 +8957,7 @@ h3 {
 }
 .purple-skin-light .left-sidebar {
   background: #fff;
+  transition: all 0.3s;
 }
 .purple-skin-light .left-sidebar .sidebar-body .sidebar-nav {
   transition: 0.3s;
@@ -8961,6 +8985,7 @@ h3 {
 
 .purple-skin-dark .topbar .top-navbar {
   background-color: #8e24aa;
+  transition: all 0.3s;
 }
 .purple-skin-dark .topbar .top-navbar .nav-item .nav-link {
   color: #EEEEEE;
@@ -8970,6 +8995,7 @@ h3 {
 }
 .purple-skin-dark .left-sidebar {
   background-color: #2b2f3a;
+  transition: all 0.3s;
 }
 
 /*# sourceMappingURL=all-skin.css.map */

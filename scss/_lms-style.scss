@@ -1,11 +1,11 @@
 // topbar nav 
 .lock-sidebar {
-  transition: $transition;
+  transition: all $transition ease-in;
 
   //topbar
   .topbar {
     padding-left: 230px;
-    transition: $transition;
+    transition: all $transition ease-in;
   }
 
   //left-sidebar
@@ -17,11 +17,11 @@
     .sidebar-header {
       .lock {
         display: block;
-        transition: $transition;
+        transition: all $transition ease-in;
       }
 
       .unlock {
-        transition: $transition;
+        transition: all $transition ease-in;
         display: none;
       }
     }
@@ -29,7 +29,7 @@
 
   // page content
   .page-wrapper {
-    transition: $transition;
+    transition: all $transition ease-in;
     padding-left: 230px;
   }
 
@@ -39,7 +39,7 @@
 .fixed-layout {
   .topbar {
     top: 0;
-    transition: $transition;
+    transition: all $transition ease-in;
     position: fixed;
     z-index: 1;
     width: calc(100%);
@@ -47,7 +47,7 @@
   }
 
   .page-wrapper {
-    transition: $transition;
+    transition: all $transition ease-in;
     margin-top: 70px;
   }
 }
@@ -55,7 +55,7 @@
 //topbar
 .topbar {
   padding-left: 55px;
-  transition: $transition;
+  transition: all $transition ease-in;
 
   .top-navbar {
     min-height: 50px;
@@ -66,8 +66,9 @@
 
     .navbar-brand-header {
       .navbar-brand {
-        font-size: 35px;
-        color: rgba(0, 0, 0, 0.2);
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.239);
+        font-weight: bold;
       }
 
       padding: 8px 16px;
@@ -84,7 +85,7 @@
           position: relative;
           font-size: 16px;
           padding: 16px 16px;
-          transition: $transition;
+          transition: all $transition ease-in;
           height: 60px;
           vertical-align: middle;
 
@@ -94,19 +95,19 @@
 
           &:hover {
             background-color: rgba(0, 0, 0, 0.1);
-            transition: $transition;
+            transition: all $transition ease-in;
 
           }
 
           &:focus {
             background-color: rgba(0, 0, 0, 0.1);
-            transition: $transition;
+            transition: all $transition ease-in;
 
           }
 
           &:active {
             background-color: rgba(0, 0, 0, 0.1);
-            transition: $transition;
+            transition: all $transition ease-in;
 
           }
 
@@ -131,14 +132,14 @@
   position: fixed;
   top: 0;
   left: -195px;
-  transition: $transition;
+  transition: all $transition ease-in;
   z-index: 1;
   box-shadow: 0.125rem 57px 0.25rem rgba(0, 0, 0, 0.075) !important;
   background: $white;
 
   &:hover {
     left: 0 !important;
-    transition: $transition;
+    transition: all $transition ease-in;
   }
 
   //sidebar header
@@ -152,7 +153,7 @@
       background: $primary;
       color: $white;
       padding: 1px 10px;
-      border: 1px solid #e9e9e9;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
       border-radius: 2px;
       font-size: 25px;
     }
@@ -191,7 +192,7 @@
       margin: 0;
       list-style: none;
       position: relative;
-      transition: $transition;
+      transition: all $transition ease-in;
 
       li {
         ul {
@@ -200,7 +201,7 @@
           margin: 0;
           background: rgba(0, 0, 0, .1);
           position: relative;
-          transition: $transition;
+          transition: all $transition ease-in;
 
           li {
             a {
@@ -236,14 +237,14 @@
           &.active {
             color: $primary;
             text-decoration: none;
-            transition: $transition;
+            transition: all $transition ease-in;
           }
 
           &:hover,
           &:active {
             color: $primary;
             text-decoration: none;
-            transition: $transition;
+            transition: all $transition ease-in;
             background-color: rgba(0, 0, 0, .2);
           }
 
@@ -255,7 +256,7 @@
               height: 7px;
               border-width: 1px 0 0 1px;
               border-style: solid;
-              border-color: #adadad;
+              border-color: #4f5a63a3;
               margin-left: 10px;
               -webkit-transform: rotate(135deg) translate(0, -50%);
               -ms-transform: rotate(135deg) translate(0, -50%);
@@ -277,14 +278,14 @@
             top: 42%;
             width: 7px;
             transform: rotate(-135deg) translate(0, -50%);
-            transition: $transition;
+            transition: all $transition ease-in;
           }
         }
 
         &.selected {
           a {
             text-decoration: none;
-            transition: $transition;
+            transition: all $transition ease-in;
 
             &.has-arrow::after {
               top: 42%;
@@ -297,7 +298,7 @@
         .collapse {
           &.in {
             display: block;
-            transition: $transition;
+            transition: all $transition ease-in;
           }
         }
       }
@@ -312,11 +313,155 @@
 
 }
 
+// right-sidebar
+.right-sidebar {
+  height: calc(100vh - 0px);
+  width: 220px;
+  background: $white;
+  z-index: 1;
+  position: fixed;
+  right: -230px;
+  top: 0;
+  box-shadow: -1rem 0px 5rem rgba(0, 0, 0, 0.0975) !important;
+  opacity: 1;
+  transition: $transition;
+
+  &.open {
+    right: 0;
+    opacity: 1;
+    transition: $transition;
+
+  }
+
+  .right-header {
+    height: 60px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background: $gray-200;
+
+    .right-title {
+      font-size: 18px;
+      color: rgba(0, 0, 0, .5);
+    }
+
+    .close-rightside {
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+
+      i {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .right-body {
+    height: calc(100vh - 60px);
+    overflow: auto;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 500;
+      color: $primary;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    ul#skin {
+      display: block;
+      list-style: none;
+      padding: 0 16px;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        padding: 5px 0 0;
+
+        &:first-child {
+          display: block;
+        }
+
+        a {
+          width: 50px;
+          height: 50px;
+          margin: 5px;
+          color: transparent;
+          display: inline-block;
+        }
+      }
+    }
+
+    // light
+    .primary-skin-light {
+      background: $primary;
+    }
+
+    .blue-skin-light {
+      background: $blue;
+    }
+
+    .tea-skin-light {
+      background: $tea;
+    }
+
+    .purple-skin-light {
+      background: $purple;
+    }
+
+    .yellow-skin-light {
+      background: $yellow;
+    }
+
+    .dark-skin-light {
+      background: $dark;
+    }
+
+    // dark
+    .primary-skin-dark {
+      background: linear-gradient(left, $skin-dark 0, $skin-dark 23%, $primary 23%, $primary 99%);
+      background: -webkit-linear-gradient(left, $skin-dark 0, $skin-dark 23%, $primary 23%, $primary 99%);
+    }
+
+    .blue-skin-dark {
+      background: linear-gradient(left, $skin-dark 0, $skin-dark 23%, $blue 23%, $blue 99%);
+      background: -webkit-linear-gradient(left, $skin-dark 0, $skin-dark 23%, $blue 23%, $blue 99%);
+    }
+
+    .tea-skin-dark {
+      background: linear-gradient(left, $skin-dark 0, $skin-dark 23%, $tea 23%, $tea 99%);
+      background: -webkit-linear-gradient(left, $skin-dark 0, $skin-dark 23%, $tea 23%, $tea 99%);
+    }
+
+    .purple-skin-dark {
+      background: linear-gradient(left, $skin-dark 0, $skin-dark 23%, $purple 23%, $purple 99%);
+      background: -webkit-linear-gradient(left, $skin-dark 0, $skin-dark 23%, $purple 23%, $purple 99%);
+    }
+
+    .yellow-skin-dark {
+      background: linear-gradient(left, $skin-dark 0, $skin-dark 23%, $yellow 23%, $yellow 99%);
+      background: -webkit-linear-gradient(left, $skin-dark 0, $skin-dark 23%, $yellow 23%, $yellow 99%);
+    }
+
+    .white-skin-dark {
+      background: linear-gradient(left, $skin-dark 0, $skin-dark 23%, $gray-200 23%, $gray-200 99%);
+      background: -webkit-linear-gradient(left, $skin-dark 0, $skin-dark 23%, $gray-200 23%, $gray-200 99%);
+    }
+
+  }
+}
+
 .page-wrapper {
   padding-left: 55px;
-  transition: $transition;
+  transition: all $transition ease-in;
   min-height: calc(100vh - 80px);
-
 }
 
 // topbar media
@@ -325,7 +470,12 @@
   // topbar nav 
   .topbar {
     .top-navbar {
-      .navbar-collapse {}
+      .navbar-brand-header {
+        .navbar-brand {
+          font-size: 25px;
+          color: rgba(0, 0, 0, 0.2);
+        }
+      }
 
       .navbar-nav {
         flex-direction: row;
