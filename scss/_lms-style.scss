@@ -1,3 +1,7 @@
+.ti {
+  margin-right: 10px;
+}
+
 // topbar nav 
 .lock-sidebar {
   transition: all $transition ease-in;
@@ -62,16 +66,19 @@
     height: 60px;
     padding: 0px;
     flex-wrap: nowrap;
-    overflow: hidden;
 
     .navbar-brand-header {
+      height: 60px;
+      overflow: hidden;
+
       .navbar-brand {
         font-size: 30px;
         color: rgba(0, 0, 0, 0.239);
         font-weight: bold;
+        padding: 8px 16px;
+        margin-right: 0;
       }
 
-      padding: 8px 16px;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
 
@@ -119,6 +126,119 @@
             top: calc(100% - 53px);
             left: 20px;
           }
+        }
+
+        &.user-profile {
+          .dropdown-toggle {
+            &::after {
+              display: none;
+            }
+          }
+
+          img {
+            border-radius: 44px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    // nav dropdown 
+    .nav-dropdown {
+      width: 280px;
+      margin-top: 5px;
+      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
+      padding: 0;
+      border-radius: 2px;
+      padding-bottom: 10px;
+
+      .nav-dropdown-header {
+        height: 80px;
+        background-color: rgba($primary, .9);
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+
+        h4 {
+          font-size: 18px;
+          color: $white;
+          font-weight: bold;
+        }
+
+        span {
+          font-size: 14px;
+          color: $gray-100;
+        }
+      }
+
+      .nav-dropdown-body {
+        max-height: 250px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .dropdown-item {
+        padding: 0.55rem 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $gray-200;
+          color: #16181b;
+        }
+
+        .noti-content {
+          display: inline-block;
+          text-overflow: ellipsis;
+          flex-basis: 80%;
+          overflow: hidden;
+
+          p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+
+      &.dropdown-menu-right {
+        .with-arrow {
+          right: 0;
+
+          span {
+            right: 20px;
+            left: auto;
+          }
+        }
+      }
+
+      .with-arrow {
+        position: absolute;
+        height: 10px;
+        overflow: hidden;
+        width: 40px;
+        top: -10px;
+
+        span {
+          transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          background-color: rgba($primary, .9);
+          width: 15px;
+          height: 15px;
+          top: 3px;
+          left: 15px;
+          position: absolute;
+          content: "";
+          -moz-border-radius: 6px 0 0;
+          border-radius: 6px 0 0;
         }
       }
     }
