@@ -8612,6 +8612,8 @@ h3 {
 
 .btn {
   transition: 0.3s;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 .btn .li-icon {
   font-weight: 500;
@@ -9167,6 +9169,9 @@ h3 {
   position: relative;
   transition: all 0.3s ease-in;
 }
+.left-sidebar .sidebar-body .sidebar-nav li.selected a.has-arrow {
+  color: #FF6200;
+}
 .left-sidebar .sidebar-body .sidebar-nav li ul {
   list-style: none;
   padding: 10px 0;
@@ -9199,7 +9204,6 @@ h3 {
   text-align: center;
 }
 .left-sidebar .sidebar-body .sidebar-nav li a.active {
-  color: #FF6200;
   text-decoration: none;
   transition: all 0.3s ease-in;
 }
@@ -9373,7 +9377,7 @@ h3 {
 .page-wrapper {
   padding-left: 55px;
   transition: all 0.3s ease-in;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 100px);
 }
 
 @media (max-width: 767.98px) {

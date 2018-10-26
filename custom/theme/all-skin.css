@@ -8708,6 +8708,10 @@ h3 {
 .blue-skin-light .left-sidebar .sidebar-body .sidebar-nav {
   transition: 0.3s;
 }
+.blue-skin-dark .left-sidebar .sidebar-body .sidebar-nav li.selected a.has-arrow,
+.blue-skin-light .left-sidebar .sidebar-body .sidebar-nav li.selected a.has-arrow {
+  color: #2196f3;
+}
 .blue-skin-dark .left-sidebar .sidebar-body .sidebar-nav li ul li a,
 .blue-skin-light .left-sidebar .sidebar-body .sidebar-nav li ul li a {
   color: #9c9d9d;

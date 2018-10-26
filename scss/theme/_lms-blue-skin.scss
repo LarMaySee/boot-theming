@@ -15,6 +15,12 @@
         transition: $transition;
 
         li {
+          &.selected {
+            a.has-arrow {
+              color: $blue;
+            }
+          }
+
           ul li a {
             color: #9c9d9d;
           }
