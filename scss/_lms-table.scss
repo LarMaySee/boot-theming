@@ -1,0 +1,179 @@
+.table {
+  .thead-primary {
+    th {
+      color: $white;
+      background-color: $primary;
+      border-color: $table-border-color;
+    }
+  }
+
+  .thead-secondary {
+    th {
+      color: $table-head-color;
+      background-color: $secondary;
+      border-color: $table-border-color;
+    }
+  }
+
+  .thead-info {
+    th {
+      color: $white;
+      background-color: $info;
+      border-color: $table-border-color;
+    }
+  }
+
+  .thead-danger {
+    th {
+      color: $white;
+      background-color: $danger;
+      border-color: $table-border-color;
+    }
+  }
+
+  .thead-yellow {
+    th {
+      color: $gray-900;
+      background-color: $yellow;
+      border-color: $table-border-color;
+    }
+  }
+
+  .thead-success {
+    th {
+      color: $white;
+      background-color: $success;
+      border-color: $table-border-color;
+    }
+  }
+
+  .thead-warning {
+    th {
+      color: $gray-900;
+      background-color: $warning;
+      border-color: $table-border-color;
+    }
+  }
+}
+
+@each $color,
+$value in $theme-colors {
+  @include table-row-variant($color, theme-color-level($color, -2));
+}
+
+@include table-row-variant(active, $table-active-bg);
+
+.table-dark {
+  color: $table-dark-color;
+  background-color: $table-dark-bg;
+
+  thead {
+    background-color: rgba($table-dark-bg, 1);
+  }
+
+  th,
+  td,
+  thead th {
+    border-color: $table-dark-border-color;
+  }
+
+  &.table-bordered {
+    border: 0;
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: $table-dark-accent-bg;
+    }
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover {
+        background-color: $table-dark-hover-bg;
+      }
+    }
+  }
+}
+
+.table-primary {
+  color: $white;
+
+  thead {
+    background-color: rgba($primary, 1);
+  }
+
+  th,
+  td,
+  thead th {
+    border-color: rgba(0, 0, 0, 0.099);
+  }
+}
+
+.table-info {
+  color: $white;
+
+  thead {
+    background-color: rgba($info, 1);
+  }
+
+  th,
+  td,
+  thead th {
+    border-color: rgba(0, 0, 0, 0.099);
+  }
+}
+
+.table-danger {
+  color: $white;
+
+  thead {
+    background-color: rgba($danger, 1);
+  }
+
+  th,
+  td,
+  thead th {
+    border-color: rgba(0, 0, 0, 0.099);
+  }
+}
+
+.table-warning {
+  color: $gray-900;
+
+  thead {
+    background-color: rgba($warning, 1);
+  }
+
+  th,
+  td,
+  thead th {
+    border-color: rgba(0, 0, 0, 0.099);
+  }
+
+  &.table-bordered {
+    border: 0;
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover {
+        background-color: rgba($warning, 0.8);
+      }
+    }
+  }
+}
+
+.table-success {
+  color: $white;
+
+  thead {
+    background-color: rgba($success, 1);
+  }
+
+  th,
+  td,
+  thead th {
+    border-color: rgba(0, 0, 0, 0.099);
+  }
+}

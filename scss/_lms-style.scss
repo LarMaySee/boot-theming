@@ -315,12 +315,6 @@
       transition: all $transition ease-in;
 
       li {
-        &.selected {
-          a.has-arrow {
-            color: $primary;
-          }
-        }
-
         ul {
           list-style: none;
           padding: 10px 0;

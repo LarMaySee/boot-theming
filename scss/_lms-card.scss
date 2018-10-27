@@ -4,8 +4,14 @@
   }
 
   .card-header {
-    border-bottom: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+
+}
+
+.card-title {
+  margin-bottom: $card-spacer-y;
+  font-size: 18px;
 }
 
 .card-group {
