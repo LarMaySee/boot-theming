@@ -3,7 +3,7 @@
     th {
       color: $white;
       background-color: $primary;
-      border-color: $table-border-color;
+      // border-color: $table-border-color;
     }
   }
 
@@ -11,7 +11,7 @@
     th {
       color: $table-head-color;
       background-color: $secondary;
-      border-color: $table-border-color;
+      // border-color: $table-border-color;
     }
   }
 
@@ -19,7 +19,7 @@
     th {
       color: $white;
       background-color: $info;
-      border-color: $table-border-color;
+      // border-color: $table-border-color;
     }
   }
 
@@ -27,7 +27,7 @@
     th {
       color: $white;
       background-color: $danger;
-      border-color: $table-border-color;
+      // border-color: $table-border-color;
     }
   }
 
@@ -35,7 +35,7 @@
     th {
       color: $gray-900;
       background-color: $yellow;
-      border-color: $table-border-color;
+      // border-color: $table-border-color;
     }
   }
 
@@ -43,7 +43,7 @@
     th {
       color: $white;
       background-color: $success;
-      border-color: $table-border-color;
+      // border-color: $table-border-color;
     }
   }
 
@@ -51,7 +51,7 @@
     th {
       color: $gray-900;
       background-color: $warning;
-      border-color: $table-border-color;
+      // border-color: $table-border-color;
     }
   }
 }
@@ -175,5 +175,59 @@ $value in $theme-colors {
   td,
   thead th {
     border-color: rgba(0, 0, 0, 0.099);
+  }
+}
+
+.table-primary-outline {
+
+  th,
+  td,
+  thead th {
+    border-color: $primary;
+  }
+}
+
+.table-info-outline {
+
+  th,
+  td,
+  thead th {
+    border-color: $info;
+  }
+}
+
+.table-danger-outline {
+
+  th,
+  td,
+  thead th {
+    border-color: $danger;
+  }
+}
+
+.table-success-outline {
+
+  th,
+  td,
+  thead th {
+    border-color: $success;
+  }
+}
+
+.table-warning-outline {
+
+  th,
+  td,
+  thead th {
+    border-color: $warning;
+  }
+}
+
+.table-yellow-outline {
+
+  th,
+  td,
+  thead th {
+    border-color: $yellow;
   }
 }

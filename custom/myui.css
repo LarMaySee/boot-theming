@@ -8821,6 +8821,7 @@ h3 {
 .breadcrumb-block .breadcrumb-title {
   padding: 10px 0;
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 @media (max-width: 767.98px) {
@@ -8932,37 +8933,30 @@ h3 {
 .table .thead-primary th {
   color: #fff;
   background-color: #FF6200;
-  border-color: #dee2e6;
 }
 .table .thead-secondary th {
   color: #495057;
   background-color: #ced4da;
-  border-color: #dee2e6;
 }
 .table .thead-info th {
   color: #fff;
   background-color: #009CDC;
-  border-color: #dee2e6;
 }
 .table .thead-danger th {
   color: #fff;
   background-color: #d3194e;
-  border-color: #dee2e6;
 }
 .table .thead-yellow th {
   color: #212529;
   background-color: #ffc107;
-  border-color: #dee2e6;
 }
 .table .thead-success th {
   color: #fff;
   background-color: #00A480;
-  border-color: #dee2e6;
 }
 .table .thead-warning th {
   color: #212529;
   background-color: #FFAA00;
-  border-color: #dee2e6;
 }
 
 .table-primary,
@@ -9177,6 +9171,42 @@ h3 {
 .table-success td,
 .table-success thead th {
   border-color: rgba(0, 0, 0, 0.099);
+}
+
+.table-primary-outline th,
+.table-primary-outline td,
+.table-primary-outline thead th {
+  border-color: #FF6200;
+}
+
+.table-info-outline th,
+.table-info-outline td,
+.table-info-outline thead th {
+  border-color: #009CDC;
+}
+
+.table-danger-outline th,
+.table-danger-outline td,
+.table-danger-outline thead th {
+  border-color: #d3194e;
+}
+
+.table-success-outline th,
+.table-success-outline td,
+.table-success-outline thead th {
+  border-color: #00A480;
+}
+
+.table-warning-outline th,
+.table-warning-outline td,
+.table-warning-outline thead th {
+  border-color: #FFAA00;
+}
+
+.table-yellow-outline th,
+.table-yellow-outline td,
+.table-yellow-outline thead th {
+  border-color: #ffc107;
 }
 
 .ti {
